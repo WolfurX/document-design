@@ -25,6 +25,9 @@ exists so nothing outward-facing ships with those marks.
 5. **Heavy full-grid table borders** on every cell plus alternating row tints by default.
 6. **Badge/pill styling** for status, version, or tags. Status is text, not a sticker.
 7. **Center-aligned body blocks** and covers stacked with four or more font sizes.
+8. **Over-sectioning**: a heading over every two-sentence block, and bullet lists where two
+   sentences of prose would read better. An over-sectioned document reads as a generated
+   outline; merge tiny sections and let prose be prose.
 
 ## Use the document's native devices instead
 

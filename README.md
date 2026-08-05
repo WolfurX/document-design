@@ -29,8 +29,9 @@ template, renderer, or rendered deliverable is being written, edited, or sent.
 ## What it bans, in one breath
 
 Accent-bar callout boxes, emoji headings, bold-label lists, cards and shadows on paper,
-full-grid heavy tables, status badges, centered body text — replaced by prose, indents,
-footnotes, thin rules, and hierarchy built from size, weight, and space.
+full-grid heavy tables, status badges, centered body text, and over-sectioned
+heading-per-paragraph outlines — replaced by prose, indents, footnotes, thin rules, and
+hierarchy built from size, weight, and space.
 
 ## License
 
