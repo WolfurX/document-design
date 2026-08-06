@@ -1,11 +1,13 @@
 ---
 name: document-design
 description: >
-  Gate for rendered DOCUMENT deliverables — PDF, DOCX, memos, proposals, reports, one-pagers,
-  SOPs, deck exports. Read BEFORE writing or editing any document template or renderer
-  (HTML-to-PDF styles, docx generators, LibreOffice pipelines) and before sending any rendered
-  document. Web design skills guard web UI; this guards paper. Pairs well with a prose
-  de-AI-ification pass (e.g. a humanizer skill); this skill owns LAYOUT tells.
+  Gate for rendered DOCUMENT and DIAGRAM deliverables — PDF, DOCX, memos, proposals, reports,
+  one-pagers, SOPs, deck exports, and any rendered chart, org chart, infographic, or diagram
+  image. Read BEFORE writing or editing any document or diagram template or renderer
+  (HTML-to-PDF styles, HTML-to-PNG chart renderers, docx generators, LibreOffice pipelines) and
+  before sending any rendered document or chart. Web design skills guard web UI; this guards
+  paper. Pairs well with a prose de-AI-ification pass (e.g. a humanizer skill); this skill owns
+  LAYOUT tells.
 ---
 
 # Document Design — the paper gate
@@ -43,6 +45,23 @@ they may keep their color.
 
 Your organization's house style stays sovereign where defined: this gate constrains HOW
 devices are styled, never WHAT your palette, typefaces, or logo lockups are.
+
+## Charts and diagrams are in scope
+
+A rendered chart is a document, not an app screen. The banned list above applies to it, and the
+excuse "the boxes are the chart's native device" does NOT license the decoration around them.
+
+Distinguish **encoding** from **decoration**, and keep only encoding:
+- **Encoding, keep:** a cluster tint that says which group a box belongs to; a dashed outline that
+  says this position does not exist yet; a colour that maps to a legend.
+- **Decoration, cut:** an accent bar across the top of a card when every card in that tier has one
+  (it distinguishes nothing); a bold coloured role label above a name; drop shadows on boxes; a
+  count or status rendered as a filled pill instead of plain text.
+
+The accent-bar-plus-coloured-label combination on a card is the same tell as banned device 1,
+just rotated onto a diagram. If a chart renderer predates this skill, run the gate over it before
+reusing it. **Inherited renderers are the most common way a banned device survives**: it was drawn
+before the rule existed, and evolving it silently carries the tell forward.
 
 ## Word/DOCX structural rules (recipients edit these files)
 

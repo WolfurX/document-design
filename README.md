@@ -1,7 +1,8 @@
 # document-design
 
 A [Claude Code skill](https://code.claude.com/docs/en/skills) that acts as a quality gate for
-rendered document deliverables — PDF, DOCX, memos, proposals, reports, SOPs.
+rendered document deliverables — PDF, DOCX, memos, proposals, reports, SOPs — and for rendered
+charts, org charts, and diagrams.
 
 ## Why
 
@@ -25,6 +26,14 @@ curl -o ~/.claude/skills/document-design/SKILL.md \
 
 Or clone and copy. Claude Code picks it up automatically; it triggers whenever a document
 template, renderer, or rendered deliverable is being written, edited, or sent.
+
+## Charts count too
+
+A rendered chart is a document, not an app screen. The skill separates **encoding** (a cluster
+tint, a dashed outline for a seat that does not exist yet) from **decoration** (an accent bar on
+every card in a tier, drop shadows, counts rendered as filled pills) and cuts only the second.
+Watch inherited renderers in particular: a chart drawn before you adopted a layout gate carries
+its tells forward every time you evolve it.
 
 ## What it bans, in one breath
 
