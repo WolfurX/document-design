@@ -73,8 +73,8 @@ before the rule existed, and evolving it silently carries the tell forward.
 ## Exit checklist (all four, every time)
 
 1. Layout: zero banned devices above (or an explicit instruction overriding one).
-2. Prose: a de-AI-ification pass on the text (AI vocabulary, rule-of-three, em-dash habits,
-   bold overuse — use a humanizer-style skill if you have one).
+2. Prose: run `skills/humanizer` over the text (AI vocabulary, rule-of-three, em-dash habits,
+   bold overuse).
 3. Verification: convert every DOCX/PDF and rasterize EVERY page, then actually look at each
    one before sending. A plausible file that is broken on page 4 is worse than no deliverable.
 4. If a template or renderer emitted a banned device, fix the RENDERER, not the one output.
