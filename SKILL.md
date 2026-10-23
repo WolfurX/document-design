@@ -47,10 +47,11 @@ Hierarchy comes from **size, weight, and space**, not from spraying color. One a
 used at most for: rules, page furniture (header/footer), and genuine emphasis. Tables: thin
 horizontal rules only (header rule + closing rule); vertical rules only when columns truly
 need separating. Inline editorial flags (e.g. "[VERIFY: legal]") are content, not decoration, so
-they may keep their color.
+they may keep their color while the document is a draft. Resolve every one before it is sent.
 
 Your organization's house style stays sovereign where defined: this gate constrains HOW
-devices are styled, never WHAT your palette, typefaces, or logo lockups are.
+devices are styled, never WHAT your palette, typefaces, or logo lockups are. The same holds for humanizer: a written
+house style decides mechanics such as heading case, quote marks, and spelling.
 
 ## Charts and diagrams are in scope
 
@@ -76,11 +77,14 @@ before the rule existed, and evolving it silently carries the tell forward.
 - Filenames carry document number/name/version; the version derives from the source of truth,
   never invented at render time.
 
-## Exit checklist (all four, every time)
+## Exit checklist (all five, every time)
 
 1. Layout: zero banned devices above (or an explicit instruction overriding one).
 2. Prose: run the [humanizer](https://github.com/WolfurX/humanizer) skill over the text (AI
    vocabulary, rule of three, em dash habits, bold overuse). Install it alongside this one.
-3. Verification: convert every DOCX/PDF and rasterize EVERY page, then actually look at each
+3. Flags: resolve every editorial flag and placeholder ("[VERIFY: legal]", "[NEEDS NAME]")
+   before the document leaves your hands. A leftover flag reads as unfinished, and humanizer
+   treats it as a sign of AI text.
+4. Verification: convert every DOCX/PDF and rasterize EVERY page, then actually look at each
    one before sending. A plausible file that is broken on page 4 is worse than no deliverable.
-4. If a template or renderer emitted a banned device, fix the RENDERER, not the one output.
+5. If a template or renderer emitted a banned device, fix the RENDERER, not the one output.
