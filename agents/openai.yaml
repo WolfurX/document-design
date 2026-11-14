@@ -1,0 +1,4 @@
+interface:
+  display_name: "Document Design"
+  short_description: "Keep AI layout tells out of rendered documents"
+  default_prompt: "Use $document-design to check this document for AI layout tells before I send it."

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "wolfurx-document-design",
+  "owner": {
+    "name": "WolfurX",
+    "url": "https://github.com/WolfurX"
+  },
+  "description": "Install document-design as a Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "document-design",
+      "source": "./",
+      "description": "Keep AI layout tells out of rendered documents, charts, and diagrams, and check every page before it ships.",
+      "license": "MIT",
+      "keywords": ["documents", "pdf", "docx", "layout", "design", "charts", "diagrams"]
+    }
+  ]
+}

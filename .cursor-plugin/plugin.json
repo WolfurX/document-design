@@ -1,0 +1,12 @@
+{
+  "name": "document-design",
+  "description": "Keep AI layout tells out of rendered documents, charts, and diagrams, and check every page before it ships.",
+  "version": "1.0.0",
+  "author": {
+    "name": "WolfurX"
+  },
+  "homepage": "https://github.com/WolfurX/document-design",
+  "repository": "https://github.com/WolfurX/document-design",
+  "license": "MIT",
+  "keywords": ["documents", "pdf", "docx", "layout", "design", "charts", "diagrams"]
+}

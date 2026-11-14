@@ -8,6 +8,9 @@ description: >
   before sending any rendered document or chart. Web design skills guard web UI; this guards
   paper. This skill owns LAYOUT tells; the humanizer skill (github.com/WolfurX/humanizer) owns
   prose tells, and the exit checklist runs both.
+license: MIT
+metadata:
+  version: "1.0.0"
 ---
 
 # Document design: the paper gate

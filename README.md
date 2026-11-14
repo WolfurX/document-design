@@ -18,6 +18,48 @@ before anything ships.
 
 ## Install
 
+The easiest way is to ask your AI agent, in any language:
+
+```text
+Install the document-design skill from https://github.com/WolfurX/document-design, following its README.
+```
+
+The skill is plain text. It runs no code, needs no API key, and makes no network requests. Once
+installed, it triggers whenever your agent writes, edits, or sends a document template,
+renderer, or rendered deliverable.
+
+### Claude Code
+
+```text
+/plugin install document-design --marketplace WolfurX/document-design
+```
+
+On Claude Code older than 2.1.275, run `/plugin marketplace add WolfurX/document-design` first,
+then `/plugin install document-design@wolfurx-document-design`. To update later, run
+`claude plugin update document-design@wolfurx-document-design`.
+
+### Codex, Cursor, Gemini CLI, GitHub Copilot, Windsurf, OpenCode, and other agents
+
+```bash
+npx skills add WolfurX/document-design --global --agent codex
+```
+
+Replace `codex` with your agent's name, such as `cursor`, `gemini-cli`, `github-copilot`,
+`windsurf`, `opencode`, or `claude-code`. Use `--agent '*'` to install for every agent the
+[Skills CLI](https://github.com/vercel-labs/skills) supports, which is about 80. Leave off
+`--global` to install only in the current project. The CLI needs Node.js 22.20 or later. Update
+with `npx skills update document-design` and remove with `npx skills remove document-design`.
+
+### Claude.ai and Claude Desktop
+
+Download this repository as a ZIP (Code, then Download ZIP) and upload it as a skill in Settings.
+
+### Any other agent
+
+Copy `SKILL.md` and `LICENSE` into a folder named `document-design` inside your agent's skills
+folder. The [Skills CLI agent list](https://github.com/vercel-labs/skills/blob/main/docs/agents.md)
+shows where each agent looks. For Claude Code, that is:
+
 ```bash
 mkdir -p ~/.claude/skills/document-design
 curl -o ~/.claude/skills/document-design/SKILL.md \
@@ -26,9 +68,17 @@ curl -o ~/.claude/skills/document-design/LICENSE \
   https://raw.githubusercontent.com/WolfurX/document-design/main/LICENSE
 ```
 
-Or clone and copy. Claude Code picks it up automatically. It triggers whenever a document
-template, renderer, or rendered deliverable is being written, edited, or sent. To update, run the
-same commands again.
+### Notes for AI agents doing the install
+
+1. Use the method for the agent you are running in: the plugin command in Claude Code, the
+   Skills CLI with your own `--agent` name elsewhere, or a manual copy if neither works.
+2. Install globally unless the user asks for the current project only.
+3. Before installing, check for an existing skill folder named `document-design`. If its
+   `SKILL.md` is not this one, ask the user before replacing it.
+4. Afterward, confirm the installed `SKILL.md` starts with `name: document-design` and tell the
+   user whether they need to restart the agent or open a new session.
+5. This skill's exit checklist runs [humanizer](https://github.com/WolfurX/humanizer) over the
+   prose, so install humanizer too unless the user declines.
 
 ## Works with humanizer
 
