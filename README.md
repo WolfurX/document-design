@@ -32,20 +32,22 @@ same commands again.
 
 ## Works with humanizer
 
-This skill owns layout. The prose side of the same problem (AI vocabulary, rule of three, em dash
-habits, bold overuse, translated-sounding phrasing) belongs to
+This skill owns layout. The prose side of the same problem (AI vocabulary, rule of three, em
+dash habits, bold overuse, translated-sounding phrasing) belongs to
 [humanizer](https://github.com/WolfurX/humanizer), and step 2 of the exit checklist runs it. A
 document can pass every layout rule here and still read as generated, so install both. Where the
-two overlap, as with emoji headings, bold-label lists, and too many headings, humanizer catches
-the tell in the text and this skill catches it in the template or renderer that produced it.
+two overlap, as with emoji headings, bold-label lists, too many headings, and leftover Markdown,
+humanizer catches the tell in the text and this skill catches it in the template or renderer
+that produced it.
 
 ## What it bans, in one breath
 
-Accent-bar callout boxes, emoji headings, bold-label lists, cards and shadows on paper, full-grid
-heavy tables, status badges, centered body text, and over-sectioned heading-per-paragraph
-outlines. The replacements are prose, indents, footnotes, thin rules, and hierarchy built from
-size, weight, and space. Your house style stays in charge of palette, typefaces, logos, and
-mechanics such as heading case, and the gate only constrains how devices are styled.
+Accent-bar callout boxes, emoji headings, bold-label lists, cards and shadows on paper,
+full-grid heavy tables, status badges, centered body text, over-sectioned heading-per-paragraph
+outlines, and raw Markdown symbols left in the rendered file. The replacements are prose,
+indents, footnotes, thin rules, and hierarchy built from size, weight, and space. Your house
+style stays in charge of palette, typefaces, logos, and mechanics such as heading case, and the
+gate only constrains how devices are styled.
 
 ## Charts count too
 

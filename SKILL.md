@@ -31,10 +31,14 @@ exists so nothing outward-facing ships with those marks.
 8. Over-sectioning: a heading over every two-sentence block, and bullet lists where two
    sentences of prose would read better. An over-sectioned document reads as a generated
    outline, so merge tiny sections and let prose be prose.
+9. Raw Markdown or chat formatting in the rendered file, such as literal **, ##, backticks, or
+   pipe tables that the generator passed through instead of converting. It shows the content
+   was pasted from a chat tool. Fix the generator so it converts or strips the markup.
 
-Devices 2, 3, and 8 have prose-level twins in humanizer (its emoji, inline-header list, and
-fragmented-header patterns). Humanizer catches them in the text; this gate catches them in the
-template or renderer that produced the text, which is where they come back from.
+Devices 2, 3, 8, and 9 have prose-level twins in humanizer (its emoji, inline-header list,
+fragmented-header, and Markdown-in-plain-text patterns). Humanizer catches them in the text;
+this gate catches them in the template or renderer that produced the text, which is where they
+come back from.
 
 ## Use the document's native devices instead
 
@@ -49,9 +53,10 @@ horizontal rules only (header rule + closing rule); vertical rules only when col
 need separating. Inline editorial flags (e.g. "[VERIFY: legal]") are content, not decoration, so
 they may keep their color while the document is a draft. Resolve every one before it is sent.
 
-Your organization's house style stays sovereign where defined: this gate constrains HOW
-devices are styled, never WHAT your palette, typefaces, or logo lockups are. The same holds for humanizer: a written
-house style decides mechanics such as heading case, quote marks, and spelling.
+Your organization's house style stays sovereign where defined: this gate constrains HOW devices
+are styled, never WHAT your palette, typefaces, or logo lockups are. The same holds for
+humanizer: a written house style decides mechanics such as heading case, quote marks, and
+spelling.
 
 ## Charts and diagrams are in scope
 
