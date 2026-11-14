@@ -6,11 +6,11 @@ description: >
   image. Read BEFORE writing or editing any document or diagram template or renderer
   (HTML-to-PDF styles, HTML-to-PNG chart renderers, docx generators, LibreOffice pipelines) and
   before sending any rendered document or chart. Web design skills guard web UI; this guards
-  paper. This skill owns LAYOUT tells; the humanizer skill (github.com/WolfurX/humanizer) owns
+  paper. This skill owns LAYOUT tells; the ai-copyedit skill (github.com/WolfurX/ai-copyedit) owns
   prose tells, and the exit checklist runs both.
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Document design: the paper gate
@@ -38,8 +38,8 @@ exists so nothing outward-facing ships with those marks.
    pipe tables that the generator passed through instead of converting. It shows the content
    was pasted from a chat tool. Fix the generator so it converts or strips the markup.
 
-Devices 2, 3, 8, and 9 have prose-level twins in humanizer (its emoji, inline-header list,
-fragmented-header, and Markdown-in-plain-text patterns). Humanizer catches them in the text;
+Devices 2, 3, 8, and 9 have prose-level twins in ai-copyedit (its emoji, inline-header list,
+fragmented-header, and Markdown-in-plain-text patterns). ai-copyedit catches them in the text;
 this gate catches them in the template or renderer that produced the text, which is where they
 come back from.
 
@@ -58,7 +58,7 @@ they may keep their color while the document is a draft. Resolve every one befor
 
 Your organization's house style stays sovereign where defined: this gate constrains HOW devices
 are styled, never WHAT your palette, typefaces, or logo lockups are. The same holds for
-humanizer: a written house style decides mechanics such as heading case, quote marks, and
+ai-copyedit: a written house style decides mechanics such as heading case, quote marks, and
 spelling.
 
 ## Charts and diagrams are in scope
@@ -88,7 +88,7 @@ before the rule existed, and evolving it silently carries the tell forward.
 ## Documents in other languages
 
 A document whose body is in another language must not look like a translated English template.
-These are the layout-side signs, and humanizer covers the prose side.
+These are the layout-side signs, and ai-copyedit covers the prose side.
 
 - Template strings left in English, such as "Page 1 of 3", "Table of Contents", "Confidential",
   "Draft", "Figure 1", chart axis labels, legends, and header or footer text. Every string the
@@ -108,11 +108,11 @@ These are the layout-side signs, and humanizer covers the prose side.
 ## Exit checklist (all five, every time)
 
 1. Layout: zero banned devices above (or an explicit instruction overriding one).
-2. Prose: run the [humanizer](https://github.com/WolfurX/humanizer) skill over the text (AI
+2. Prose: run the [ai-copyedit](https://github.com/WolfurX/ai-copyedit) skill over the text (AI
    vocabulary, rule of three, em dash habits, bold overuse, translated-sounding phrasing).
    Install it alongside this one.
 3. Flags: resolve every editorial flag and placeholder ("[VERIFY: legal]", "[NEEDS NAME]")
-   before the document leaves your hands. A leftover flag reads as unfinished, and humanizer
+   before the document leaves your hands. A leftover flag reads as unfinished, and ai-copyedit
    treats it as a sign of AI text.
 4. Verification: convert every DOCX/PDF and rasterize EVERY page, then actually look at each
    one before sending. In a document that isn't in English, also check every template string,

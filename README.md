@@ -77,17 +77,17 @@ curl -o ~/.claude/skills/document-design/LICENSE \
    `SKILL.md` is not this one, ask the user before replacing it.
 4. Afterward, confirm the installed `SKILL.md` starts with `name: document-design` and tell the
    user whether they need to restart the agent or open a new session.
-5. This skill's exit checklist runs [humanizer](https://github.com/WolfurX/humanizer) over the
-   prose, so install humanizer too unless the user declines.
+5. This skill's exit checklist runs [ai-copyedit](https://github.com/WolfurX/ai-copyedit) over the
+   prose, so install ai-copyedit too unless the user declines.
 
-## Works with humanizer
+## Works with ai-copyedit
 
 This skill owns layout. The prose side of the same problem (AI vocabulary, rule of three, em
 dash habits, bold overuse, translated-sounding phrasing) belongs to
-[humanizer](https://github.com/WolfurX/humanizer), and step 2 of the exit checklist runs it. A
+[ai-copyedit](https://github.com/WolfurX/ai-copyedit), and step 2 of the exit checklist runs it. A
 document can pass every layout rule here and still read as generated, so install both. Where the
 two overlap, as with emoji headings, bold-label lists, too many headings, and leftover Markdown,
-humanizer catches the tell in the text and this skill catches it in the template or renderer
+ai-copyedit catches the tell in the text and this skill catches it in the template or renderer
 that produced it.
 
 ## What it bans, in one breath
@@ -120,7 +120,7 @@ out as right-aligned English.
 Every document goes through five steps before it is sent.
 
 1. Check for banned layout devices, unless an explicit instruction overrides one.
-2. Run humanizer over the prose.
+2. Run ai-copyedit over the prose.
 3. Resolve every editorial flag and placeholder, such as "[VERIFY: legal]".
 4. Rasterize every page and look at it. In a document that isn't in English, also check its
    template strings, dates, and numbers.

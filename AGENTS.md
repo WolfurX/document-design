@@ -28,11 +28,11 @@ skill written in Markdown. It has no build step and runs no code, and it should 
   place. Prefer tightening an existing rule over adding a new one.
 - Follow the skill's own rules in every file: no em dashes outside examples, no lists where every
   item opens with a bold label, sentence-case headings, and no invented facts in examples.
-- Keep humanizer and document-design consistent. They give the same fix for a required warning,
+- Keep ai-copyedit and document-design consistent. They give the same fix for a required warning,
   defer to the same house style, require the same flags to be resolved before sending, and refer
   to each other's rules by name.
 - The banned devices are numbered. If you add one, update the README summary and any reference
-  to the device numbers in this skill and in humanizer.
+  to the device numbers in this skill and in ai-copyedit.
 
 ## Checks before publishing
 

@@ -1,7 +1,7 @@
 {
   "name": "document-design",
   "description": "Keep AI layout tells out of rendered documents, charts, and diagrams, and check every page before it ships.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "WolfurX"
   },
