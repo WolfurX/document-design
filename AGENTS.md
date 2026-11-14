@@ -1,7 +1,7 @@
 # Guide for agents
 
-This file explains how to change document-design without breaking it. The repo holds one agent skill written
-in Markdown. It has no build step and runs no code, and it should stay that way.
+This file explains how to change document-design without breaking it. The repo holds one agent
+skill written in Markdown. It has no build step and runs no code, and it should stay that way.
 
 ## Files
 
