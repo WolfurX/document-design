@@ -44,6 +44,12 @@ every card in a tier, drop shadows, counts rendered as filled pills) and cuts on
 Watch inherited renderers in particular: a chart drawn before you adopted a layout gate carries
 its tells forward every time you evolve it.
 
+## Other languages
+
+A document in another language must not look like a translated English template. The skill
+checks for template strings left in English; English dates, numbers, and quote marks; the wrong
+proofing language; missing glyphs; and layouts that overflow when text runs longer than English.
+
 ## What it bans, in one breath
 
 Accent-bar callout boxes, emoji headings, bold-label lists, cards and shadows on paper,

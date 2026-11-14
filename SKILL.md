@@ -77,14 +77,37 @@ before the rule existed, and evolving it silently carries the tell forward.
 - Filenames carry document number/name/version; the version derives from the source of truth,
   never invented at render time.
 
+## Documents in other languages
+
+A document whose body is in another language must not look like a translated English template.
+These are the layout-side signs, and humanizer covers the prose side.
+
+- Template strings left in English, such as "Page 1 of 3", "Table of Contents", "Confidential",
+  "Draft", "Figure 1", chart axis labels, legends, and header or footer text. Every string the
+  renderer emits belongs in the document's language.
+- English mechanics in the template, such as title case headings, English quote marks, English
+  date and number formats, and a currency symbol in the English position. Take them from the
+  document's locale or its house style.
+- The wrong proofing language. Set the language of the Word styles to the document's language,
+  or hyphenation, spell check, and generated fields such as the table of contents follow English.
+- Missing glyphs. A typeface without the language's accented or non-Latin characters falls back
+  to another font mid-word, which looks broken. If the house typeface lacks them, use the house
+  style's designated fallback or raise it with whoever owns the style.
+- Layouts sized for English. German, French, and Spanish text often runs longer than English and
+  overflows boxes, table cells, and diagram labels sized for it. Arabic and Hebrew need a mirrored
+  right-to-left layout, not right-aligned English.
+
 ## Exit checklist (all five, every time)
 
 1. Layout: zero banned devices above (or an explicit instruction overriding one).
 2. Prose: run the [humanizer](https://github.com/WolfurX/humanizer) skill over the text (AI
-   vocabulary, rule of three, em dash habits, bold overuse). Install it alongside this one.
+   vocabulary, rule of three, em dash habits, bold overuse, translated-sounding phrasing).
+   Install it alongside this one.
 3. Flags: resolve every editorial flag and placeholder ("[VERIFY: legal]", "[NEEDS NAME]")
    before the document leaves your hands. A leftover flag reads as unfinished, and humanizer
    treats it as a sign of AI text.
 4. Verification: convert every DOCX/PDF and rasterize EVERY page, then actually look at each
-   one before sending. A plausible file that is broken on page 4 is worse than no deliverable.
+   one before sending. In a document that isn't in English, also check every template string,
+   date, and number against the document's language. A plausible file that is broken on page 4
+   is worse than no deliverable.
 5. If a template or renderer emitted a banned device, fix the RENDERER, not the one output.
