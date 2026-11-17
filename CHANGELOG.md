@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.0 (2026-11-17)
+
+- New section, Pick the form before drawing. It maps what a figure has to show to the name of
+  the form that shows it, so the form can be asked for by name.
+- Chart defaults that a house style or a brief can override: bars start at zero, one y-axis per
+  chart, and a stacked bar instead of a pie, donut, or gauge.
+- Rules for when a diagram earns its place and for short labels in the reader's terms.
+- The new material is credited in the README and LICENSE.
+
 ## 1.0.1 (2026-11-14)
 
 - The prose skill this one pairs with was renamed from humanizer to

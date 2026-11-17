@@ -107,6 +107,12 @@ every card in a tier, drop shadows, counts rendered as filled pills) and cuts on
 Watch inherited renderers in particular. A chart drawn before you adopted a layout gate carries
 its tells forward every time you evolve it.
 
+The skill also has you pick the form before drawing. It maps what a figure has to show to the
+name of the form that shows it, from logic tree to swimlane diagram to treemap, because a form
+asked for by name comes out right where "make a diagram" comes out as a default. A few defaults
+keep charts honest: bars start at zero, a chart has one y-axis, and parts of a whole go in a
+stacked bar instead of a pie, donut, or gauge.
+
 ## Other languages
 
 A document in another language must not look like a translated English template. The skill
@@ -125,6 +131,15 @@ Every document goes through five steps before it is sent.
 4. Rasterize every page and look at it. In a document that isn't in English, also check its
    template strings, dates, and numbers.
 5. If a template or renderer emitted a banned device, fix the renderer, not just the one output.
+
+## Lineage
+
+The form names follow the diagram pack in
+[showheyohtaki/motion-prompt](https://github.com/showheyohtaki/motion-prompt) (Shohei Ohtaki).
+The chart defaults are adapted from [Nutlope/hallmark](https://github.com/Nutlope/hallmark), and
+the rules for when to draw a diagram and how to label it from
+[Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill). All three are MIT-licensed, and
+the material is rewritten in this skill's own words.
 
 ## License
 

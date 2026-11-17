@@ -10,7 +10,7 @@ description: >
   prose tells, and the exit checklist runs both.
 license: MIT
 metadata:
-  version: "1.0.1"
+  version: "1.1.0"
 ---
 
 # Document design: the paper gate
@@ -77,6 +77,44 @@ The accent-bar-plus-colored-label combination on a card is the same tell as bann
 just rotated onto a diagram. If a chart renderer predates this skill, run the gate over it before
 reusing it. **Inherited renderers are the most common way a banned device survives**: it was drawn
 before the rule existed, and evolving it silently carries the tell forward.
+
+## Pick the form before drawing
+
+Decide what the figure has to show, then ask for the form by name. "Make a diagram of this" gets
+a default, where "a swimlane diagram with three lanes" gets the right one.
+
+| To show | Ask for |
+|---|---|
+| One question or whole broken down | Logic tree, or a pyramid diagram for layers |
+| Ideas around one topic | Mind map |
+| What groups share | Venn diagram |
+| Items sorted on two axes | 2x2 matrix |
+| Steps and decisions | Flowchart, or a swimlane diagram when several people or teams own the steps |
+| A loop | Cycle diagram |
+| Causes of one problem | Fishbone diagram |
+| Events or phases in time | Timeline, a Gantt chart when tasks have durations, a chevron process for phases in a row |
+| Stages that narrow | Funnel chart |
+| What a person does and feels at each stage | Customer journey map |
+| How two numbers relate | Scatter plot, or a bubble chart to add a third number |
+| Parts of a whole | 100% stacked bar chart, or a treemap when the parts are many |
+| Values across two categories | Heatmap |
+| A share of people | Pictogram chart |
+| Nested scopes | Concentric circle diagram |
+
+A single value is a figure in a sentence, not a chart, and anything past about seven categories
+or twelve nodes reads better as a table. A diagram earns its place when the point is how things
+connect. Show a screen with the screen itself, not with a diagram of it.
+
+Unless the house style or the brief says otherwise, these defaults keep a chart honest. Bars
+start at zero, or the axis says where it starts. A chart has one y-axis, so two units become two
+small charts instead of a combo chart with two scales. Parts of a whole go in a stacked bar
+instead of a pie, donut, or gauge. A series is named by a label or a swatch, and the label text
+stays in the text color.
+
+Labels take one to three words in the reader's terms, so a tool goes by its name and a step by
+its result. An invented layer name such as "orchestration layer" is ai-copyedit's invented
+concept label drawn in a box. A tool with no logo on hand is its name in text, not a letter in
+a circle.
 
 ## Word/DOCX structural rules (recipients edit these files)
 
